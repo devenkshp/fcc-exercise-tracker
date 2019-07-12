@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Exercise Tracker | Free Code Camp</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+     <header>
+       <h1>
+         Exercise Tracker
+       </h1>
+     </header>
+      <div class="body">
+        <div class="create-id">
+          <div class="header">
+            Create a New User
+          </div>
+          <div class="form">
+            <form method="POST" action="/api/exercise/add-user" id="add-user">
+              <input type="text" name="user" required placeholder="Enter username*">
+              <button type="submit">
+                Add user
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="add-exerc">
+          <div class="header">
+            Add new exercise
+          </div>
+          <div class="form">
+            <form method="post" action="/api/exercise/create-exercise" id="create-exerc">
+              <input type="text" name="uid" required placeholder="Enter user ID*">
+              <input type="text" name="descrip" required placeholder="Enter description*">
+              <input type="number" name="duration" required placeholder="Enter duration*">
+              <input type="date" name="date" required>
+              <button type="submit">
+                Add exercise
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+     <footer>
+       by <a href="twitter.com/devenkshp" targer="_blank">devenkshp</a>
+     </footer>
+   </body>
+
+</html>
